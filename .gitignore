@@ -2,7 +2,6 @@
 
 # dependencies
 /node_modules
-/backend/node_modules
 /.pnp
 .pnp.js
 
@@ -26,6 +25,7 @@ yarn-error.log*
 src/conf.json
 
 ### Below is Backend ###
+/backend/node_modules
 backend/conf.json
 HELP.md
 target/
