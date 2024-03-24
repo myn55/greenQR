@@ -4,9 +4,68 @@
   text-align: left;
 }
 
+.TitleContainer {
+  text-align: center;
+  display: table;
+  margin: 100px auto 0 auto;
+}
+
 .Title {
-  color: white;
-  margin: 0;
+  text-align: center;
+  color: #04aa6d;
+  font-size: 3.25em;
+  font-weight: 600;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.TitleLogo {
+  width: 55px;
+  height: 55px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.TitleLogo:hover {
+  animation: jiggle 0.5s ease;
+}
+
+.SidebarContainer {
+  width: 200px;
+  height: 100vh;
+  background-color: #d5d5d5;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.SidebarContainer span {
+  margin-left: 12px;
+  margin-bottom: 0;
+}
+
+.SidebarContainer ul {
+  margin: 5px;
+}
+
+li {
+  list-style-type: circle;
+}
+
+li li {
+  list-style-type: square;
+}
+
+.SearchBarContainer {
+  text-align: center;
+}
+
+.SearchBarSide {
+  display: inline-block;
+}
+
+.SearchButton {
+  font-size: 1em;
 }
 
 button {
@@ -20,19 +79,24 @@ button {
 
   cursor: pointer;
   transition-duration: 0.4s;
+  vertical-align: middle;
 
   margin: 5px;
-  padding: 12px;
-  border-radius: 5px;
+  padding: 10px 10px 7px 10px;
+  border-radius: 20px;
 }
 
 button:hover {
   background-color: #037f52;
-  font-size: 20px;
+}
+
+button > img {
+  width: 25px;
+  height: 25px;
 }
 
 input {
-  width: 70%;
+  width: 40%;
   padding: 10px;
   margin-right: 10px;
   border: 1px solid #ccc;
@@ -44,45 +108,14 @@ input::placeholder {
   font-style: italic;
 }
 
-.SearchBarContainer {
-  text-align: center;
-}
-
 .App {
   display: inline;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes jiggle {
+  0% { transform: rotate(-5deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
 }
