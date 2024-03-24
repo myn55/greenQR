@@ -4,7 +4,7 @@ import './TitleContainer.css'
 export const TitleContainer = () => {
     return (
         <span className='TitleContainer'>
-          <img src={logo} className='TitleLogo'/>
+          <img src={logo} alt="GreenQR Logo" className='TitleLogo'/>
           <span className='Title'>GreenQR</span>
         </span>    
     );

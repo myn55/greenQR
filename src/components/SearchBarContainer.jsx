@@ -16,9 +16,12 @@ export const SearchBarContainer = () => {
                 placeholder="Input a product name to see its sustainability rating. i.e. 'Windex Glass Cleaner'"
                 value={input}
                 onChange={e => setInput(e.target.value)}/>
-            <div className='SearchBarSide'>
+                <div className='SearchBarSide'>
                 <motion.button 
-                    className='SearchButton' onClick={handleRequest}>
+                    whileHover={{scale: 1.1}}
+                    className='SearchButton' 
+                    onClick={handleRequest}
+                >
                     <img src={searchIcon} alt='Search'/>
                 </motion.button>
             </div>

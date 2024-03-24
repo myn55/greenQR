@@ -1,3 +1,7 @@
+body {
+  background-color: #ffffff;
+}
+
 .Header {
   background-color: #4caf50;
   padding: 20px;
@@ -50,21 +54,4 @@ button {
 
 button:hover {
   background-color: #037f52;
-}
-
-button > img {
-  width: 25px;
-  height: 25px;
-}
-
-.App {
-  display: inline;
-}
-
-@keyframes jiggle {
-  0% { transform: rotate(-5deg); }
-  25% { transform: rotate(5deg); }
-  50% { transform: rotate(-5deg); }
-  75% { transform: rotate(5deg); }
-  100% { transform: rotate(0deg); }
 }

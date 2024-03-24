@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const express = require('express');
+const cors = require('cors');
 
 async function main() {
     await mongoose.connect('mongodb+srv://preilly103:4Vb46gqaAMSsjWGo@greeninventory.8hh4cxh.mongodb.net/?retryWrites=true&w=majority&appName=GreenInventory')
@@ -11,7 +13,7 @@ async function main() {
         },
         itemDesc: {
             type: String,
-            required: false
+            required: true
         },
         esgScore: {
             type: Number,
@@ -31,14 +33,26 @@ async function main() {
         }
     })
 
-    const Item = mongoose.model('items', itemSchema)
+    const Item = mongoose.model('items', itemSchema, 'green-inventory')
 
-    const laysChips = new Item({
-        itemName: 'Original Lays Chips',
-        itemDesc: 'A bag of original-flavored Lays chips.',
-        esgScore: 7,
-        
-    });
+    // Express back-end
+    const app = express()
+    console.log('\x1b[34mExpress app listening to port 5000\x1b[0m')
+    app.use(express.json())
+    app.use(cors())
+    app.get('/', (req, resp) => {
+        resp.send('App functional')
+    })
+
+    app.post('/register', async (req, resp) => {
+        try {
+            console.log(req)
+        } catch (e) {
+            resp.send('Something went wrong')
+        }
+    })
+
+    app.listen(5000)
 }
 
 main().catch(err => console.log(err))
