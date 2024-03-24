@@ -57,19 +57,6 @@ button > img {
   height: 25px;
 }
 
-input {
-  width: 40%;
-  padding: 10px;
-  margin-right: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition-duration: 0.4s;
-}
-
-input::placeholder {
-  font-style: italic;
-}
-
 .App {
   display: inline;
 }

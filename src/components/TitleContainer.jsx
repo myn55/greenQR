@@ -1,4 +1,4 @@
-import logo from './/grq_icon.png'
+import logo from './grq_icon512.png'
 import './TitleContainer.css'
 
 export const TitleContainer = () => {
