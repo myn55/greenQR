@@ -21,9 +21,7 @@
     background-color: rgb(166, 142, 112);
 }
 
-.test {
-    position: absolute;
-    display: block;
-    left: 0;
-    right: 0;
+hr {
+    border: 1px solid rgb(166, 142, 112);
+    margin: 5px 0;
 }

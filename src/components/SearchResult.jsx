@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import './SearchResult.css'
 import { InfoBlock } from './InfoBlock'
+import { ReactDOM } from 'react'
 
 export const SearchResult = ({searchResult, key}) => {
     const [infoBlockOpen, setInfoBlockOpen] = useState(false)
@@ -11,8 +12,11 @@ export const SearchResult = ({searchResult, key}) => {
 
     return (
         <div className='SearchResult'>
-            <p>{key + '.' + searchResult.itemName}</p>
+            <p><a href={searchResult.esgLink}>{searchResult.itemName}</a></p>
             <p>{searchResult.itemDesc}</p>
+            <hr></hr>
+            <p>{'Brand: ' + (searchResult.brandName || 'none specified')}</p>
+            <p>{'ESG Score: ' + searchResult.esgScore}</p>
             <motion.button
                 whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
@@ -21,8 +25,6 @@ export const SearchResult = ({searchResult, key}) => {
             >
                 ?
             </motion.button>
-
-            {infoBlockOpen && <InfoBlock searchResult={searchResult}/>}
         </div>
     )
 }

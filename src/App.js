@@ -3,7 +3,6 @@ import { SearchBarContainer } from './components/SearchBarContainer';
 import { SearchResultsContainer } from './components/SearchResultsContainer';
 import { useState } from 'react';
 import './App.css';
-import { InfoBlock } from './components/InfoBlock';
 
 function App() {
   const [searchResults, setSearchResults] = useState([])
