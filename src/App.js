@@ -9,11 +9,7 @@ function App() {
 
   return (
     <div className='App'>
-      <TitleContainer/>
-      <div>
-        <SearchBarContainer setSearchResults={setSearchResults}/>
-        <SearchResultsContainer searchResults={searchResults}/>
-      </div>
+
     </div>
   );
 }
