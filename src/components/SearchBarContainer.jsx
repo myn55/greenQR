@@ -23,18 +23,26 @@ export const SearchBarContainer = ({setSearchResults}) => {
                 }
             }
         ).catch(e => console.error(e))
+        
+        if (!resp) {
+            console.log('\x1b[31mNo response from server.\x1b[0m')
+            alert('No response from server.')
+            return
+        }
 
         const items = await resp.json()
-        setSearchResults(items)
+        setSearchResults(JSON.parse(items))
     }
-
+    
     return (
         <div class='SearchBarContainer'>
-            <input type='text' 
-                placeholder="Input a product name to see its sustainability rating. i.e. 'Cleaning Wipes'"
-                value={input}
-                onChange={e => {setInput(e.target.value)}}
-            />
+            <div class="InputWrapper">
+                <input type='text' 
+                    placeholder="Input a product name to see its sustainability rating. i.e. 'Cleaning Wipes'"
+                    value={input}
+                    onChange={e => {setInput(e.target.value)}}
+                />
+            </div>
             <div className='SearchBarSide'>
                 <motion.button 
                     whileHover={{scale: 1.1}}

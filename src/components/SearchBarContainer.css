@@ -1,16 +1,28 @@
 .SearchBarContainer {
   text-align: center;
+  display: block;
+  margin: auto;
+  width: 80%;
 }
 
 .SearchBarSuggestion {
   margin-right: 20px;
 }
 
-input {
-  width: 40%;
-  padding: 10px;
-  margin-right: 10px;
+.InputWrapper {
+  display: inline-block;
+  width: 45%;
+  height: 2.5rem;
+  box-shadow: 0 0 20px #ddd;
   border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border: none;
   border-radius: 5px;
 }
 
@@ -20,6 +32,8 @@ input::placeholder {
 
 .SearchBarSide {
   display: inline-block;
+  position: relative;
+  left: 10px;
 }
 
 .SearchButton {

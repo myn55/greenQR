@@ -8,9 +8,9 @@ function App() {
   const [searchResults, setSearchResults] = useState([])
 
   return (
-    <div>
-      <div className='Main'>
-        <TitleContainer/>
+    <div className='App'>
+      <TitleContainer/>
+      <div>
         <SearchBarContainer setSearchResults={setSearchResults}/>
         <SearchResultsContainer searchResults={searchResults}/>
       </div>
