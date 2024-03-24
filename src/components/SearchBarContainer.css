@@ -1,0 +1,11 @@
+.SearchBarContainer {
+    text-align: center;
+  }
+  
+  .SearchBarSide {
+    display: inline-block;
+  }
+  
+  .SearchButton {
+    font-size: 1em;
+  }

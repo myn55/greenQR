@@ -4,32 +4,6 @@
   text-align: left;
 }
 
-.TitleContainer {
-  text-align: center;
-  display: table;
-  margin: 100px auto 0 auto;
-}
-
-.Title {
-  text-align: center;
-  color: #04aa6d;
-  font-size: 3.25em;
-  font-weight: 600;
-  margin: 10px;
-  vertical-align: middle;
-}
-
-.TitleLogo {
-  width: 55px;
-  height: 55px;
-  position: relative;
-  vertical-align: middle;
-}
-
-.TitleLogo:hover {
-  animation: jiggle 0.5s ease;
-}
-
 .SidebarContainer {
   width: 200px;
   height: 100vh;
@@ -54,18 +28,6 @@ li {
 
 li li {
   list-style-type: square;
-}
-
-.SearchBarContainer {
-  text-align: center;
-}
-
-.SearchBarSide {
-  display: inline-block;
-}
-
-.SearchButton {
-  font-size: 1em;
 }
 
 button {

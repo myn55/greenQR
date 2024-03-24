@@ -1,0 +1,25 @@
+.TitleContainer {
+    text-align: center;
+    display: table;
+    margin: 100px auto 0 auto;
+  }
+  
+  .Title {
+    text-align: center;
+    color: #04aa6d;
+    font-size: 3.25em;
+    font-weight: 600;
+    margin: 10px;
+    vertical-align: middle;
+  }
+  
+  .TitleLogo {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    vertical-align: middle;
+  }
+  
+  .TitleLogo:hover {
+    animation: jiggle 0.5s ease;
+  }
