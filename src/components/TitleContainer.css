@@ -1,0 +1,35 @@
+.TitleContainer {
+  padding-top: 20vh;
+  position: relative;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.Title {
+  text-align: center;
+  color: #04aa6d;
+  font-family: 'Ubuntu', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3.25em;
+  font-weight: 600;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.TitleLogo {
+  width: 55px;
+  height: 55px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.TitleLogo:hover {
+  animation: jiggle 0.5s ease;
+}
+
+@keyframes jiggle {
+  0% { transform: rotate(-5deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}

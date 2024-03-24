@@ -1,0 +1,59 @@
+.App {
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Header {
+  background-color: #4caf50;
+  padding: 20px;
+  text-align: left;
+}
+
+.SidebarContainer {
+  width: 200px;
+  height: 100vh;
+  background-color: #d5d5d5;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.SidebarContainer span {
+  margin-left: 12px;
+  margin-bottom: 0;
+}
+
+.SidebarContainer ul {
+  margin: 5px;
+}
+
+li {
+  list-style-type: circle;
+}
+
+li li {
+  list-style-type: square;
+}
+
+button {
+  background-color: #04aa6d;
+  border: #04aa6d;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+
+  cursor: pointer;
+  transition-duration: 0.4s;
+  vertical-align: middle;
+
+  margin: 5px;
+  padding: 10px 10px 7px 10px;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #037f52;
+}
