@@ -22,7 +22,7 @@ function findFirstMatch(items, regex) {
         const item = items[i]
 
         // Partial match found
-        if (regex.test(item.itemName.toLowerCase())) {
+        if (regex.test(item.itemName.toLowerCase())) {  
             return [item]
         }
     }
