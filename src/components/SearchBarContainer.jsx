@@ -35,8 +35,8 @@ export const SearchBarContainer = ({setSearchResults}) => {
     }
     
     return (
-        <div class='SearchBarContainer'>
-            <div class="InputWrapper">
+        <div className='SearchBarContainer'>
+            <div className="InputWrapper">
                 <input type='text' 
                     placeholder="Input a product name to see its sustainability rating. i.e. 'Cleaning Wipes'"
                     value={input}
@@ -46,6 +46,7 @@ export const SearchBarContainer = ({setSearchResults}) => {
             <div className='SearchBarSide'>
                 <motion.button 
                     whileHover={{scale: 1.1}}
+                    whileTap={{scale: 0.9}}
                     className='SearchButton' 
                     onClick={handleRequest}
                 >

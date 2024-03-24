@@ -8,7 +8,7 @@ export const SearchResultsContainer = ({searchResults}) => {
         <div className='SearchResultsContainer'>
             {
                 searchResults.map((searchResult, i) => {
-                    return <SearchResult searchResult={searchResult} key={i}/>
+                    return <SearchResult searchResult={searchResult} key={toString(i+1)}/>
                 })
             }
         </div>
